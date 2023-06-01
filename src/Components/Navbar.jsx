@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Search from "./Search";
 import { RiMovie2Fill } from "react-icons/ri";
-import { BrowserRouter as Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { AiFillPlayCircle } from "react-icons/ai";
 import { getUpcomingList } from "../Api.js";
-import { BrowserRouter as Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const CardUpcoming = () => {
   const [upcomingMovies, setUpcomingMovies] = useState([]);

@@ -3,7 +3,7 @@ import { AiFillPlayCircle } from "react-icons/ai";
 import { getNowPlayingList } from "../Api.js";
 import Navbar from "../Components/Navbar.jsx";
 import Footer from "../Components/Footer.jsx";
-import { BrowserRouter as Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const NowPlaying = () => {
   const [nowPlayingMovies, setNowPlayingMovies] = useState([]);
