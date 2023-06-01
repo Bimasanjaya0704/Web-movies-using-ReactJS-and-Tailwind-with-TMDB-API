@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { AiFillPlayCircle } from "react-icons/ai";
 import { getPopularList } from "../Api.js";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Link } from "react-router-dom";
 
 const CardPopular = () => {
   const [popularMovies, setPopularMovies] = useState([]);

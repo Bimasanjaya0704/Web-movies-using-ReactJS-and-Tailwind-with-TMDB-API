@@ -3,7 +3,7 @@ import { AiFillPlayCircle } from "react-icons/ai";
 import { getPopularList } from "../Api.js";
 import Navbar from "../Components/Navbar.jsx";
 import Footer from "../Components/Footer.jsx";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Link } from "react-router-dom";
 
 const Popular = () => {
     const [popularMovies, setPopularMovies] = useState([]);
