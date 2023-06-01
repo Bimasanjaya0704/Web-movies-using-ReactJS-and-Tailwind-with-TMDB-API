@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import marvel1 from "../Assets/marvel1.jpg";
-import fast from "../Assets/fast.jpg";
+import int from "../Assets/int.jpg";
 import dc from "../Assets/dc.jpg";
-import avatar from "../Assets/avatar.jpg";
+import op from "../Assets/op.png";
 import { HiChevronDoubleLeft, HiChevronDoubleRight } from "react-icons/hi";
 import { RxDotFilled } from "react-icons/rx";
 
@@ -12,13 +12,13 @@ const Beranda = () => {
       img: marvel1,
     },
     {
-      img: fast,
+      img: int,
     },
     {
       img: dc,
     },
     {
-      img: avatar,
+      img: op,
     },
   ];
 

@@ -4,12 +4,19 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    container: {
+      center : true,
+      padding : '10px',
+    },
+
     extend: {
       colors : {
-        dark : '#222831',
-        second : '#393E46',
-        primary : '#00ADB5',
-        light :'#EEEEEE'
+        dark : '#001F29',
+        second : '#153243',
+        primary : '#25C9CC',
+        psecond : '#20B0B3',
+        light :'#F4F9E9',
+        lsecond : '#DCE0D3'
          }
     },
   },

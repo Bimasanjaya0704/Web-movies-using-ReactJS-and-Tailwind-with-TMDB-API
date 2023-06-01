@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Search from "./Search";
+import { RiMovie2Fill } from "react-icons/ri";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
@@ -9,11 +11,12 @@ const Navbar = () => {
         <div className="justify-between mx-auto lg:items-center lg:flex lg:px-2 ">
           <div>
             <div className="flex items-center justify-between py-3 lg:py-5 lg:block">
-              <a href="#">
-                <h2 className="text-xl font-bold md:text-3xl lg:text-4xl text-primary ">
+              <Link to="/">
+                <h2 className="flex text-xl font-bold md:text-3xl lg:text-4xl text-primary ">
+                  <RiMovie2Fill className=" mt-1 mr-1" />
                   BIMovies
                 </h2>
-              </a>
+              </Link>
               <div className="lg:hidden">
                 <button
                   className="p-2 text-primary rounded-md outline-none focus:border-primary focus:border"
@@ -60,19 +63,19 @@ const Navbar = () => {
             >
               <ul className="items-center justify-center space-y-8 lg:flex lg:space-x-6 xl:space-x-10 lg:space-y-0">
                 <li className="text-light hover:text-primary flex justify-center">
-                  <a href="#">Home</a>
+                  <Link to="/">Home</Link>
                 </li>
                 <li className="text-light hover:text-primary flex justify-center">
-                  <a href="#">Now Playing</a>
+                  <Link to="/nowplaying">Now Playing</Link>
                 </li>
                 <li className="text-light hover:text-primary flex justify-center">
-                  <a href="#">Upcoming</a>
+                  <Link to="/upcoming">Upcoming</Link>
                 </li>
                 <li className="text-light hover:text-primary flex justify-center">
-                  <a href="#">Popular</a>
+                <Link to="/popular">Popular</Link>
                 </li>
                 <li className="text-light hover:text-primary flex justify-center">
-                  <a href="#">Top Rated</a>
+                <Link to="/toprated">Top Rated</Link>
                 </li>
                 <Search />
               </ul>
