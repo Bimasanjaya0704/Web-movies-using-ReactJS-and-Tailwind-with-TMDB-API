@@ -44,7 +44,7 @@ const CardUpcoming = () => {
               </div>
             </div>
 
-            <div className="flex justify-center py-2 px-2 md:px-4 gap-2">
+            <div className="flex items-center justify-center py-2 px-2 md:px-4 gap-2">
             <Link to="/watchmovie"><button className="bg-psecond font-normal text-xs sm:text-sm text-light px-2 py-1 md:px-4 md:py-2 rounded-lg hover:opacity-90">
                 Watch
               </button></Link>

@@ -51,7 +51,7 @@ const Popular = () => {
           </div>
 
             <div className="flex flex-wrap justify-center py-2 gap-2">
-            <Link to="/watchmovie"><button className="bg-psecond font-normal text-xs sm:text-sm text-light px-2 py-1 md:px-4 md:py-2 rounded-lg hover:opacity-90">
+            <Link to="/watchmovie"><button className="bg-psecond font-normal mt-0.5 sm:mt-0 text-xs sm:text-sm text-light px-2 py-1 md:px-4 md:py-2 rounded-lg hover:opacity-90">
                 Watch
               </button></Link>
               <Link to="/download"><button className="bg-psecond font-normal text-xs sm:text-sm text-light px-2 py-1 md:px-4 md:py-2 rounded-lg hover:opacity-90 inline-flex items-center">

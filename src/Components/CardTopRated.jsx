@@ -44,11 +44,11 @@ const CardTopRated = () => {
             </div>
           </div>
 
-          <div className="flex justify-center py-2 px-2 md:px-4 gap-2">
+          <div className="flex items-center justify-center py-2 px-2 md:px-4 gap-2">
           <Link to="/watchmovie"><button className="bg-psecond font-normal text-xs sm:text-sm text-light px-2 py-1 md:px-4 md:py-2 rounded-lg hover:opacity-90">
                 Watch
               </button></Link>
-              <Link to="/download"><button className="bg-psecond font-normal text-xs sm:text-sm text-light px-2 py-1 md:px-4 md:py-2 rounded-lg hover:opacity-90 inline-flex items-center">
+              <Link to="/download"><button className="bg-psecond font-normal mt-0.5 text-xs sm:text-sm text-light px-2 py-1 md:px-4 md:py-2 rounded-lg hover:opacity-90 inline-flex items-center">
                 <svg
                   className="fill-current h-3 w-3 md:w-4 md:h-4 mr-1 sm:mr-2"
                   xmlns="http://www.w3.org/2000/svg"
