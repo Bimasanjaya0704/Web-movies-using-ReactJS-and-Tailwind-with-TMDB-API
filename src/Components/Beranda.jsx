@@ -40,17 +40,17 @@ const Beranda = () => {
 
   return (
     <div className="bg-second relative">
-      <div className="w-full h-52 md:h-96 lg:h-120  m-auto py-4 px-4 relative group">
+      <div className="w-full h-52 md:h-96 lg:h-120  m-auto py-4 px-4 relative">
         <div
           className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
           style={{
             backgroundImage: `url(${slides[currentSlide].img})`,
           }}
         ></div>
-        <div className="hidden group-hover:block absolute top-1/2 left-5 text-white cursor-pointer">
+        <div className="absolute top-1/2 left-5 text-white cursor-pointer opacity-0 hover:opacity-100 hover:duration-300">
           <HiChevronDoubleLeft onClick={handleSlideLeft} size={30} />
         </div>
-        <div className="hidden group-hover:block absolute top-1/2 right-5 text-white cursor-pointer">
+        <div className="absolute top-1/2 right-5 text-white cursor-pointer opacity-0 hover:opacity-100 hover:duration-300">
           <HiChevronDoubleRight onClick={handleSlideRight} size={30} />
         </div>
         <div className="flex top-4 justify-center py-2">

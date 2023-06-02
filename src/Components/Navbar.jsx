@@ -1,10 +1,18 @@
 import React, { useState } from "react";
-import Search from "./Search";
 import { RiMovie2Fill } from "react-icons/ri";
 import { Link } from "react-router-dom";
+import { getSearchMovie } from "../Api.js";
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
+
+  const handleSearch = async (q) => {
+    if (q.length > 3) {
+      const query = await getSearchMovie(q);
+      console.log({ query: query });
+    }
+  };
+
   return (
     <nav className="w-full bg-dark shadow">
       <div className="px-4">
@@ -72,12 +80,21 @@ const Navbar = () => {
                   <Link to="/upcoming">Upcoming</Link>
                 </li>
                 <li className="text-light hover:text-primary flex justify-center">
-                <Link to="/popular">Popular</Link>
+                  <Link to="/popular">Popular</Link>
                 </li>
                 <li className="text-light hover:text-primary flex justify-center">
-                <Link to="/toprated">Top Rated</Link>
+                  <Link to="/toprated">Top Rated</Link>
                 </li>
-                <Search />
+                <label htmlFor="search">
+                  <input
+                    type="search"
+                    name="search"
+                    id="search"
+                    placeholder="Search movie.."
+                    className="bg-light w-full text-center lg:text-left font-normal text-base my-6 px-2 py-1 rounded-md shadow-md text-second focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary"
+                    onChange={({ target }) => handleSearch(target.value)}
+                  />
+                </label>
               </ul>
             </div>
           </div>

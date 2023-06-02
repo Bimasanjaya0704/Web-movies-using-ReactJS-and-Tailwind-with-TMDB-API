@@ -27,7 +27,13 @@ export const getTopRatedList = async () =>{
     return topRated.data.results
 }
 
-export const getSimilarList = async () =>{
-    const similar = await axios.get(`https://api.themoviedb.org/3/movie/{movie_id}/similar?api_key=7e0e8b7af895a0b69fe9fbbc1f0356d2`);
-    return similar.data.results
-}
+// export const getSimilarList = async () =>{
+//     const similar = await axios.get(`https://api.themoviedb.org/3/movie/{movie_id}/similar?api_key=7e0e8b7af895a0b69fe9fbbc1f0356d2`);
+//     return similar.data.results
+// }
+
+export const getSearchMovie = async (q) => {
+    const search = await axios.get(`https://api.themoviedb.org/3/search/movie?query=${q}&api_key=7e0e8b7af895a0b69fe9fbbc1f0356d2`);
+    return search.data;
+  };
+  

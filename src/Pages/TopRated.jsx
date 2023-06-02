@@ -18,7 +18,7 @@ const TopRated = () => {
       return topRatedMovies.map((movie, i) => {
         return (
         <div
-          className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 2xl:w-1/6 px-2 mb-6"
+          className="w-1/2 sm:w-1/3 md:w-1/4 xl:w-1/6 2xl:w-1/12 px-2 mb-6"
           key={i}
         >
           <div className="bg-inherit shadow-md shadow-light rounded-lg overflow-hidden">
@@ -49,7 +49,7 @@ const TopRated = () => {
             </div>
           </div>
 
-            <div className="flex justify-center py-2 gap-2">
+            <div className="flex flex-wrap justify-center py-2 gap-2">
             <Link to="/watchmovie"><button className="bg-psecond font-normal text-xs sm:text-sm text-light px-2 py-1 md:px-4 md:py-2 rounded-lg hover:opacity-90">
                 Watch
               </button></Link>
@@ -78,7 +78,7 @@ const TopRated = () => {
           <div className="text-sm md:text-base lg:text-xl">
           <div className="flex items-center">
     <hr className="border-primary flex-grow" />
-    <div className="mx-4">Now Playing</div>
+    <div className="mx-4">Top Rated</div>
     <hr className="border-primary flex-grow" />
   </div>
 </div>
