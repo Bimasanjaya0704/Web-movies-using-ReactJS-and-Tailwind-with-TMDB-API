@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { AiFillPlayCircle } from "react-icons/ai";
-import { getNowPlayingList, getSearchMovie } from "../Api.js";
+import { getSearchMovie } from "../Api.js";
 import { Link } from "react-router-dom";
 
 const NowPlaying = () => {
