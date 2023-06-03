@@ -14,7 +14,7 @@ const Navbar = () => {
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               <Link to="/">
-                <h2 className="flex text-xl font-bold md:text-3xl md:text-4xl text-primary ">
+                <h2 className="flex text-xl font-bold md:text-3xl text-primary ">
                   <RiMovie2Fill className=" mt-1 mr-1" />
                   BIMovies
                 </h2>

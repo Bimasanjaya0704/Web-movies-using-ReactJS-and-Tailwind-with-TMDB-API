@@ -86,15 +86,15 @@ const NowPlaying = () => {
 
   return (
    <div>
-      <div className="w-full bg-dark">
-        <div className="flex justify-center lg:justify-end lg:px-6">
+      <div className="w-full bg-second px-4">
+        <div className="flex justify-center sm:justify-end bg-dark rounded-lg px-4">
           <label htmlFor="search">
             <input
               type="search"
               name="search"
               id="search"
               placeholder="Search movie.."
-              className="bg-light text-center lg:text-left font-normal text-base my-6 px-2 py-1 rounded-md shadow-md text-second focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary"
+              className="bg-light text-center sm:text-left font-normal text-base my-4 py-1 sm:px-4 rounded-md shadow-md text-second focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary"
               value={searchInput}
               onChange={handleSearch}
             />
