@@ -1,31 +1,25 @@
 import React, { useState } from "react";
 import { RiMovie2Fill } from "react-icons/ri";
 import { Link } from "react-router-dom";
-import { getSearchMovie } from "../Api.js";
+
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
 
-  const handleSearch = async (q) => {
-    if (q.length > 3) {
-      const query = await getSearchMovie(q);
-      console.log({ query: query });
-    }
-  };
 
   return (
     <nav className="w-full bg-dark shadow">
       <div className="px-4">
-        <div className="justify-between mx-auto lg:items-center lg:flex lg:px-2 ">
+        <div className="justify-between mx-auto md:items-center md:flex md:px-2 ">
           <div>
-            <div className="flex items-center justify-between py-3 lg:py-5 lg:block">
+            <div className="flex items-center justify-between py-3 md:py-5 md:block">
               <Link to="/">
-                <h2 className="flex text-xl font-bold md:text-3xl lg:text-4xl text-primary ">
+                <h2 className="flex text-xl font-bold md:text-3xl md:text-4xl text-primary ">
                   <RiMovie2Fill className=" mt-1 mr-1" />
                   BIMovies
                 </h2>
               </Link>
-              <div className="lg:hidden">
+              <div className="md:hidden">
                 <button
                   className="p-2 text-primary rounded-md outline-none focus:border-primary focus:border"
                   onClick={() => setNavbar(!navbar)}
@@ -65,11 +59,11 @@ const Navbar = () => {
           </div>
           <div>
             <div
-              className={`flex-1 justify-self-center pb-3 mt-8 lg:block lg:pb-0 lg:mt-0 ${
+              className={`flex justify-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
                 navbar ? "block" : "hidden"
               }`}
             >
-              <ul className="items-center justify-center space-y-8 lg:flex lg:space-x-6 xl:space-x-10 lg:space-y-0">
+              <ul className="flex items-center justify-center space-y-8 md:flex md:space-x-6 xl:space-x-10 md:space-y-0 lg:mr-8">
                 <li className="text-light hover:text-primary flex justify-center">
                   <Link to="/">Home</Link>
                 </li>
@@ -85,16 +79,6 @@ const Navbar = () => {
                 <li className="text-light hover:text-primary flex justify-center">
                   <Link to="/toprated">Top Rated</Link>
                 </li>
-                <label htmlFor="search">
-                  <input
-                    type="search"
-                    name="search"
-                    id="search"
-                    placeholder="Search movie.."
-                    className="bg-light w-full text-center lg:text-left font-normal text-base my-6 px-2 py-1 rounded-md shadow-md text-second focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary"
-                    onChange={({ target }) => handleSearch(target.value)}
-                  />
-                </label>
               </ul>
             </div>
           </div>
@@ -104,4 +88,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar ;

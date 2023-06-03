@@ -39,7 +39,7 @@ const Beranda = () => {
   };
 
   return (
-    <div className="bg-second relative">
+    <div className="bg-second relative pb-6">
       <div className="w-full h-52 md:h-96 lg:h-120  m-auto py-4 px-4 relative">
         <div
           className="w-full h-full rounded-2xl bg-center bg-cover duration-500"

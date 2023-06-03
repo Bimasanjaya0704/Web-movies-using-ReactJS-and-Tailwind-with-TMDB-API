@@ -18,7 +18,7 @@ const Popular = () => {
       return popularMovies.map((movie, i) => {
         return (
         <div
-          className="w-1/2 sm:w-1/3 md:w-1/4 xl:w-1/6 2xl:w-1/12 px-2 mb-6"
+          className="w-1/2 sm:w-1/3 md:w-1/4 xl:w-1/5 2xl:w-1/12 px-2 mb-6"
           key={i}
         >
           <div className="bg-inherit shadow-md shadow-light rounded-lg overflow-hidden">
@@ -56,7 +56,7 @@ const Popular = () => {
               </button></Link>
               <Link to="/download"><button className="bg-psecond font-normal text-xs sm:text-sm text-light px-2 py-1 md:px-4 md:py-2 rounded-lg hover:opacity-90 inline-flex items-center">
                 <svg
-                  className="fill-current h-3 w-3 md:w-4 md:h-4 mr-1 sm:mr-2"
+                  className="fill-current h-3 w-3 mr-1"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
                 >
@@ -74,7 +74,7 @@ const Popular = () => {
   return (
     <div>
       <Navbar />
-      <div className="bg-second px-6 pb-4 mb-10">
+      <div className="bg-second px-6 pb-4">
         <div className="font-semibold text-base text-primary py-3">
           <div className="text-sm md:text-base lg:text-xl">
           <div className="flex items-center">
