@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <nav className="w-full bg-dark shadow">
       <div className="px-4">
-        <div className="justify-between mx-auto md:items-center md:flex md:px-2 ">
+        <div className="justify-between mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               <Link to="/">
@@ -59,24 +59,24 @@ const Navbar = () => {
           </div>
           <div>
             <div
-              className={`flex justify-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+              className={`flex justify-center text-center pb-8 mt-8 md:block md:pb-0 md:mt-0 ${
                 navbar ? "block" : "hidden"
               }`}
             >
-              <ul className="flex items-center justify-center space-y-8 md:flex md:space-x-6 xl:space-x-10 md:space-y-0 lg:mr-8">
-                <li className="text-light hover:text-primary flex justify-center">
+              <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 text-normal xl:text-lg">
+                <li className="text-light hover:text-primary ">
                   <Link to="/">Home</Link>
                 </li>
-                <li className="text-light hover:text-primary flex justify-center">
+                <li className="text-light hover:text-primary ">
                   <Link to="/nowplaying">Now Playing</Link>
                 </li>
-                <li className="text-light hover:text-primary flex justify-center">
+                <li className="text-light hover:text-primary ">
                   <Link to="/upcoming">Upcoming</Link>
                 </li>
-                <li className="text-light hover:text-primary flex justify-center">
+                <li className="text-light hover:text-primary ">
                   <Link to="/popular">Popular</Link>
                 </li>
-                <li className="text-light hover:text-primary flex justify-center">
+                <li className="text-light hover:text-primary ">
                   <Link to="/toprated">Top Rated</Link>
                 </li>
               </ul>
